@@ -3,46 +3,37 @@ package Shape
 import . "p5js-wasm-go/utils"
 
 func Arc(args ...any) error {
-	err := AnyFuncReturnErr("arc", []int{6, 7, 8}, args...)
-	return err
+	return AnyFuncReturnErr("arc", []int{6, 7, 8}, args...)
 }
 
 func Ellipse(args ...any) error {
-	err := AnyFuncReturnErr("ellipse", []int{3, 4, 5}, args...)
-	return err
+	return AnyFuncReturnErr("ellipse", []int{3, 4, 5}, args...)
 }
 
 func Circle(args ...any) error {
-	err := AnyFuncReturnErr("circle", []int{3}, args...)
-	return err
+	return AnyFuncReturnErr("circle", []int{3}, args...)
 }
 
 func Line(args ...any) error {
-	err := AnyFuncReturnErr("line", []int{4, 6}, args...)
-	return err
+	return AnyFuncReturnErr("line", []int{4, 6}, args...)
 }
 
 func Point(args ...any) error {
-	err := AnyFuncReturnErr("point", []int{1, 2, 3}, args...)
-	return err
+	return AnyFuncReturnErr("point", []int{1, 2, 3}, args...)
 }
 
 func Quad(args ...any) error {
-	err := AnyFuncReturnErr("quad", []int{8, 9, 10, 12, 13, 14}, args...)
-	return err
+	return AnyFuncReturnErr("quad", []int{8, 9, 10, 12, 13, 14}, args...)
 }
 
 func Rect(args ...any) error {
-	err := AnyFuncReturnErr("rect", []int{3, 4, 5, 6, 7, 8}, args...)
-	return err
+	return AnyFuncReturnErr("rect", []int{3, 4, 5, 6, 7, 8}, args...)
 }
 
 func Square(args ...any) error {
-	err := AnyFuncReturnErr("square", []int{3, 4, 5, 6, 7}, args...)
-	return err
+	return AnyFuncReturnErr("square", []int{3, 4, 5, 6, 7}, args...)
 }
 
 func Triangle(args ...any) error {
-	err := AnyFuncReturnErr("triangle", []int{6}, args...)
-	return err
+	return AnyFuncReturnErr("triangle", []int{6}, args...)
 }

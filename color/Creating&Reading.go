@@ -6,81 +6,42 @@ import (
 )
 
 func Alpha(args ...any) (js.Value, error) {
-	res, err := utils.AnyFuncReturnJsValue("alpha", []int{1}, args...)
-	if err != nil {
-		return js.Null(), err
-	}
-	return res, nil
+	return utils.AnyFuncReturnJsValue("alpha", []int{1}, args...)
 }
 
 func Blue(args ...any) (js.Value, error) {
-	res, err := utils.AnyFuncReturnJsValue("blue", []int{1}, args...)
-	if err != nil {
-		return js.Null(), err
-	}
-	return res, nil
+	return utils.AnyFuncReturnJsValue("blue", []int{1}, args...)
+
 }
 
-func Brightness(args ...any) (int, error) {
-	res, err := utils.AnyFuncReturnJsValue("brightness", []int{1}, args...)
-	if err != nil {
-		return -1, err
-	}
-	return res.Int(), nil
+func Brightness(args ...any) (js.Value, error) {
+	return utils.AnyFuncReturnJsValue("brightness", []int{1}, args...)
 }
 
 func Color(args ...any) (js.Value, error) {
-	res, err := utils.AnyFuncReturnJsValue("color", []int{1, 2, 3, 4}, args...)
-	if err != nil {
-		return js.Null(), err
-	}
-	return res, nil
+	return utils.AnyFuncReturnJsValue("color", []int{1, 2, 3, 4}, args...)
 }
 
 func Green(args ...any) (js.Value, error) {
-	res, err := utils.AnyFuncReturnJsValue("green", []int{1}, args...)
-	if err != nil {
-		return js.Null(), err
-	}
-	return res, nil
+	return utils.AnyFuncReturnJsValue("green", []int{1}, args...)
 }
 
 func Hue(args ...any) (js.Value, error) {
-	res, err := utils.AnyFuncReturnJsValue("hue", []int{1}, args...)
-	if err != nil {
-		return js.Null(), err
-	}
-	return res, nil
+	return utils.AnyFuncReturnJsValue("hue", []int{1}, args...)
 }
 
 func LerpColor(args ...any) (js.Value, error) {
-	res, err := utils.AnyFuncReturnJsValue("lerp_color", []int{3}, args...)
-	if err != nil {
-		return js.Null(), err
-	}
-	return res, nil
+	return utils.AnyFuncReturnJsValue("lerp_color", []int{3}, args...)
 }
 
 func Lightness(args ...any) (js.Value, error) {
-	res, err := utils.AnyFuncReturnJsValue("lightness", []int{1}, args...)
-	if err != nil {
-		return js.Null(), err
-	}
-	return res, nil
+	return utils.AnyFuncReturnJsValue("lightness", []int{1}, args...)
 }
 
 func Red(args ...any) (js.Value, error) {
-	res, err := utils.AnyFuncReturnJsValue("red", []int{1}, args...)
-	if err != nil {
-		return js.Null(), err
-	}
-	return res, nil
+	return utils.AnyFuncReturnJsValue("red", []int{1}, args...)
 }
 
 func Saturation(args ...any) (js.Value, error) {
-	res, err := utils.AnyFuncReturnJsValue("saturation", []int{1}, args...)
-	if err != nil {
-		return js.Null(), err
-	}
-	return res, nil
+	return utils.AnyFuncReturnJsValue("saturation", []int{1}, args...)
 }
