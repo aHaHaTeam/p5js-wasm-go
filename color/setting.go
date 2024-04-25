@@ -28,6 +28,10 @@ func NoStroke(args ...any) error {
 	return AnyFuncReturnErr("noStroke", []int{0}, args...)
 }
 
+func Stroke(args ...any) error {
+	return AnyFuncReturnErr("stroke", []int{1, 2, 3, 4}, args...)
+}
+
 func Erase(args ...any) error {
 	return AnyFuncReturnErr("erase", []int{0, 1, 2}, args...)
 }
