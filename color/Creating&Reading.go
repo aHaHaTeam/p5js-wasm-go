@@ -5,7 +5,7 @@ import (
 	"syscall/js"
 )
 
-func Alpha(args ...js.Value) (js.Value, error) {
+func Alpha(args ...any) (js.Value, error) {
 	res, err := utils.AnyFuncReturnJsValue("alpha", []int{1}, args...)
 	if err != nil {
 		return js.Null(), err
@@ -13,7 +13,7 @@ func Alpha(args ...js.Value) (js.Value, error) {
 	return res, nil
 }
 
-func Blue(args ...js.Value) (js.Value, error) {
+func Blue(args ...any) (js.Value, error) {
 	res, err := utils.AnyFuncReturnJsValue("blue", []int{1}, args...)
 	if err != nil {
 		return js.Null(), err
@@ -21,7 +21,7 @@ func Blue(args ...js.Value) (js.Value, error) {
 	return res, nil
 }
 
-func Brightness(args ...js.Value) (int, error) {
+func Brightness(args ...any) (int, error) {
 	res, err := utils.AnyFuncReturnJsValue("brightness", []int{1}, args...)
 	if err != nil {
 		return -1, err
@@ -29,7 +29,7 @@ func Brightness(args ...js.Value) (int, error) {
 	return res.Int(), nil
 }
 
-func Color(args ...js.Value) (js.Value, error) {
+func Color(args ...any) (js.Value, error) {
 	res, err := utils.AnyFuncReturnJsValue("color", []int{1, 2, 3, 4}, args...)
 	if err != nil {
 		return js.Null(), err
@@ -37,7 +37,7 @@ func Color(args ...js.Value) (js.Value, error) {
 	return res, nil
 }
 
-func Green(args ...js.Value) (js.Value, error) {
+func Green(args ...any) (js.Value, error) {
 	res, err := utils.AnyFuncReturnJsValue("green", []int{1}, args...)
 	if err != nil {
 		return js.Null(), err
@@ -45,7 +45,7 @@ func Green(args ...js.Value) (js.Value, error) {
 	return res, nil
 }
 
-func Hue(args ...js.Value) (js.Value, error) {
+func Hue(args ...any) (js.Value, error) {
 	res, err := utils.AnyFuncReturnJsValue("hue", []int{1}, args...)
 	if err != nil {
 		return js.Null(), err
@@ -53,7 +53,7 @@ func Hue(args ...js.Value) (js.Value, error) {
 	return res, nil
 }
 
-func LerpColor(args ...js.Value) (js.Value, error) {
+func LerpColor(args ...any) (js.Value, error) {
 	res, err := utils.AnyFuncReturnJsValue("lerp_color", []int{3}, args...)
 	if err != nil {
 		return js.Null(), err
@@ -61,7 +61,7 @@ func LerpColor(args ...js.Value) (js.Value, error) {
 	return res, nil
 }
 
-func Lightness(args ...js.Value) (js.Value, error) {
+func Lightness(args ...any) (js.Value, error) {
 	res, err := utils.AnyFuncReturnJsValue("lightness", []int{1}, args...)
 	if err != nil {
 		return js.Null(), err
@@ -69,7 +69,7 @@ func Lightness(args ...js.Value) (js.Value, error) {
 	return res, nil
 }
 
-func Red(args ...js.Value) (js.Value, error) {
+func Red(args ...any) (js.Value, error) {
 	res, err := utils.AnyFuncReturnJsValue("red", []int{1}, args...)
 	if err != nil {
 		return js.Null(), err
@@ -77,7 +77,7 @@ func Red(args ...js.Value) (js.Value, error) {
 	return res, nil
 }
 
-func Saturation(args ...js.Value) (js.Value, error) {
+func Saturation(args ...any) (js.Value, error) {
 	res, err := utils.AnyFuncReturnJsValue("saturation", []int{1}, args...)
 	if err != nil {
 		return js.Null(), err
