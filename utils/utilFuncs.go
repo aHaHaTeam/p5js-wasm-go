@@ -30,6 +30,17 @@ func AnyFuncReturnJsValue(name string, possibleArgsNumbers []int, args ...any) (
 	return js.Global().Call(name, s...), nil
 }
 
+func GetGlobalValue(name string) js.Value {
+	return js.Global().Get(name)
+}
+
+func BingJsFunc(name string, goFunc func(...js.Value) any) {
+	jsFunc := js.FuncOf(func(this js.Value, args []js.Value) any {
+		return goFunc(args...)
+	})
+	js.Global().Set(name, jsFunc)
+}
+
 func AnyFuncReturnInt(name string, possibleArgsNumbers []int, args ...any) (int, error) {
 	res, err := AnyFuncReturnJsValue(name, possibleArgsNumbers, args...)
 	if err != nil {
