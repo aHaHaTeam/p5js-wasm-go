@@ -14,7 +14,7 @@ func main() {
 	colorIndex := 0
 	colors := [][]any{{239, 30, 30}, {30, 239, 30}, {30, 30, 239}}
 
-	Setup(func() interface{} {
+	Setup(func(...js.Value) interface{} {
 		_, err := CreateCanvas(400, 400)
 		if err != nil {
 			return nil
@@ -26,7 +26,7 @@ func main() {
 		return nil
 	})
 
-	Draw(func() interface{} {
+	Draw(func(...js.Value) interface{} {
 		err := Ellipse(MouseX(), MouseY(), radius, radius)
 		if err != nil {
 			return nil
