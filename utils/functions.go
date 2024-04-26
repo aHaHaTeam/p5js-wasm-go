@@ -34,7 +34,7 @@ func GetGlobalValue(name string) js.Value {
 	return js.Global().Get(name)
 }
 
-func BingJsFunc(name string, goFunc func(...js.Value) any) {
+func BindJsFunc(name string, goFunc func(...js.Value) any) {
 	jsFunc := js.FuncOf(func(this js.Value, args []js.Value) any {
 		return goFunc(args...)
 	})

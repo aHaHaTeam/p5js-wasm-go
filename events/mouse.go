@@ -54,37 +54,37 @@ func MouseIsPressed() js.Value {
 }
 
 func MouseMoved(callback func(...js.Value) interface{}) {
-	BingJsFunc("mouseMoved", callback)
+	BindJsFunc("mouseMoved", callback)
 }
 
 func MouseDragged(callback func(...js.Value) interface{}) {
-	BingJsFunc("mouseDragged", callback)
+	BindJsFunc("mouseDragged", callback)
 }
 
 func MousePressed(callback func(...js.Value) interface{}) {
-	BingJsFunc("mousePressed", callback)
+	BindJsFunc("mousePressed", callback)
 }
 
 func MouseReleased(callback func(...js.Value) interface{}) {
-	BingJsFunc("mouseReleased", callback)
+	BindJsFunc("mouseReleased", callback)
 }
 
 func MouseClicked(callback func(...js.Value) interface{}) {
-	BingJsFunc("mouseClicked", callback)
+	BindJsFunc("mouseClicked", callback)
 }
 
 func DoubleClicked(callback func(...js.Value) interface{}) {
-	BingJsFunc("doubleClicked", callback)
+	BindJsFunc("doubleClicked", callback)
 }
 
 func MouseWheel(callback func(...js.Value) interface{}) {
-	BingJsFunc("mouseWheel", callback)
+	BindJsFunc("mouseWheel", callback)
 }
 
 func RequestPointerLock(callback func(...js.Value) interface{}) {
-	BingJsFunc("requestPointerLock", callback)
+	BindJsFunc("requestPointerLock", callback)
 }
 
 func ExitPointerLock(callback func(...js.Value) interface{}) {
-	BingJsFunc("exitPointerLock", callback)
+	BindJsFunc("exitPointerLock", callback)
 }

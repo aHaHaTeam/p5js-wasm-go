@@ -18,17 +18,17 @@ func KeyCode() js.Value {
 }
 
 func KeyPressed(callback func(...js.Value) interface{}) {
-	BingJsFunc("keyPressed", callback)
+	BindJsFunc("keyPressed", callback)
 }
 
 func KeyReleased(callback func(...js.Value) interface{}) {
-	BingJsFunc("keyReleased", callback)
+	BindJsFunc("keyReleased", callback)
 }
 
 func KeyTyped(callback func(...js.Value) interface{}) {
-	BingJsFunc("keyTyped", callback)
+	BindJsFunc("keyTyped", callback)
 }
 
-func KeyIsDown(code js.Value) (js.Value, error) {
-	return AnyFuncReturnJsValue("keyIsDown", []int{1}, code)
+func KeyIsDown(args ...any) (js.Value, error) {
+	return AnyFuncReturnJsValue("keyIsDown", []int{1}, args...)
 }
