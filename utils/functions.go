@@ -30,6 +30,20 @@ func AnyFuncReturnJsValue(name string, possibleArgsNumbers []int, args ...any) (
 	return js.Global().Call(name, s...), nil
 }
 
+func FuncWithCallbacksReturnJsValue(name string, possibleCallbacksNumbers []int, arg any, callbacks ...func(...js.Value) any) (js.Value, error) {
+	if !slices.Contains(possibleCallbacksNumbers, len(callbacks)) {
+		return js.Null(), fmt.Errorf("%d arguments is not supported by function %s", len(callbacks)+1, name)
+	}
+	args := make([]interface{}, len(callbacks))
+	args[0] = js.ValueOf(arg)
+	for i, callback := range callbacks {
+		args[i+1] = js.FuncOf(func(this js.Value, args []js.Value) any {
+			return callback(args...)
+		})
+	}
+	return js.Global().Call(name, args...), nil
+}
+
 func GetGlobalValue(name string) js.Value {
 	return js.Global().Get(name)
 }

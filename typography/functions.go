@@ -6,14 +6,7 @@ import (
 )
 
 func LoadFont(path any, callbacks ...func(...js.Value) any) (js.Value, error) {
-	args := make([]interface{}, len(callbacks))
-	args[0] = js.ValueOf(path)
-	for i, callback := range callbacks {
-		args[i+1] = js.FuncOf(func(this js.Value, args []js.Value) any {
-			return callback(args...)
-		})
-	}
-	return js.Global().Call("loadFont", args...), nil
+	return utils.FuncWithCallbacksReturnJsValue("loadFont", []int{0, 1, 2}, path, callbacks...)
 }
 
 func Text(args ...any) (js.Value, error) {
