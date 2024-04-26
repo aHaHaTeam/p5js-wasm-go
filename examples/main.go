@@ -1,12 +1,12 @@
 package main
 
 import (
-	. "p5js-wasm-go/Shape"
 	. "p5js-wasm-go/color"
 	"p5js-wasm-go/events"
 	. "p5js-wasm-go/p5js"
 	. "p5js-wasm-go/rendering"
 	_ "p5js-wasm-go/rendering"
+	. "p5js-wasm-go/shape"
 	"syscall/js"
 	_ "syscall/js"
 )

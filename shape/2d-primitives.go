@@ -1,4 +1,4 @@
-package Shape
+package shape
 
 import . "p5js-wasm-go/utils"
 
