@@ -1,8 +1,9 @@
 package p5js
 
 import (
-	"p5js-wasm-go/utils"
 	"syscall/js"
+
+	"github.com/aHaHaTeam/p5js-wasm-go/utils"
 )
 
 func init() {
@@ -39,6 +40,7 @@ func Setup(setup func(...js.Value) any) {
 }
 
 // Draw continuously executes the given function until the program is stopped.
+//
 // It must be called only once, after Setup.
 func Draw(draw func(...js.Value) any) {
 	utils.BindJsFunc("draw", draw)

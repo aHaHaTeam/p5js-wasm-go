@@ -1,6 +1,6 @@
 package shape
 
-import . "p5js-wasm-go/utils"
+import . "github.com/aHaHaTeam/p5js-wasm-go/utils"
 
 func Arc(args ...any) error {
 	return AnyFuncReturnErr("arc", []int{6, 7, 8}, args...)

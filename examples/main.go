@@ -1,12 +1,13 @@
 package main
 
 import (
-	. "p5js-wasm-go/color"
-	. "p5js-wasm-go/events"
-	. "p5js-wasm-go/p5js"
-	. "p5js-wasm-go/rendering"
-	. "p5js-wasm-go/shape"
 	"syscall/js"
+
+	. "github.com/aHaHaTeam/p5js-wasm-go/color"
+	. "github.com/aHaHaTeam/p5js-wasm-go/events"
+	. "github.com/aHaHaTeam/p5js-wasm-go/p5js"
+	. "github.com/aHaHaTeam/p5js-wasm-go/rendering"
+	. "github.com/aHaHaTeam/p5js-wasm-go/shape"
 )
 
 func main() {

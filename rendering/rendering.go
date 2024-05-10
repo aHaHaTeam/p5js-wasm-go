@@ -1,8 +1,9 @@
 package rendering
 
 import (
-	. "p5js-wasm-go/utils"
 	"syscall/js"
+
+	. "github.com/aHaHaTeam/p5js-wasm-go/utils"
 )
 
 func CreateCanvas(args ...any) (js.Value, error) {
