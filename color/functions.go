@@ -1,8 +1,9 @@
 package color
 
 import (
-	"p5js-wasm-go/utils"
 	"syscall/js"
+
+	"github.com/aHaHaTeam/p5js-wasm-go/utils"
 )
 
 func Alpha(args ...any) (js.Value, error) {

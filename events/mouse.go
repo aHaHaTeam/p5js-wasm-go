@@ -1,8 +1,9 @@
 package events
 
 import (
-	. "p5js-wasm-go/utils"
 	"syscall/js"
+
+	. "github.com/aHaHaTeam/p5js-wasm-go/utils"
 )
 
 // MovedX returns x-delta of the mouse.

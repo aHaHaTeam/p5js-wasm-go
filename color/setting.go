@@ -1,7 +1,7 @@
 package color
 
 import (
-	. "p5js-wasm-go/utils"
+	. "github.com/aHaHaTeam/p5js-wasm-go/utils"
 )
 
 func Background(args ...any) error {
