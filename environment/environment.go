@@ -45,8 +45,8 @@ func FrameRate(args ...any) error {
 	return AnyFuncReturnErr("frameRate", []int{0, 1}, args...)
 }
 
-func GetTargetFrameRate(args ...any) error {
-	return AnyFuncReturnErr("getTargetFrameRate", []int{0}, args...)
+func GetTargetFrameRate(args ...any) (js.Value, error) {
+	return AnyFuncReturnJsValue("getTargetFrameRate", []int{0}, args...)
 }
 
 func NoCursor(args ...any) error {
@@ -73,8 +73,8 @@ func WindowHeight() js.Value {
 	return GetGlobalValue("windowHeight")
 }
 
-func WindowResized(args ...any) error {
-	return AnyFuncReturnErr("windowResized", []int{0, 1}, args...)
+func WindowResized(callback func(...js.Value) interface{}) {
+	BindJsFunc("windowResized", callback)
 }
 
 func Width() js.Value {
@@ -85,26 +85,26 @@ func Height() js.Value {
 	return GetGlobalValue("height")
 }
 
-func FullScreen(args ...any) error {
-	return AnyFuncReturnErr("fullscreen", []int{0, 1}, args...)
+func FullScreen(args ...any) (js.Value, error) {
+	return AnyFuncReturnJsValue("fullscreen", []int{0, 1}, args...)
 }
 
-func PixelDensity(args ...any) error {
-	return AnyFuncReturnErr("pixelDensity", []int{0, 1}, args...)
+func PixelDensity(args ...any) (js.Value, error) {
+	return AnyFuncReturnJsValue("pixelDensity", []int{0, 1}, args...)
 }
 
-func DisplayDensity(args ...any) error {
-	return AnyFuncReturnErr("displayDensity", []int{0}, args...)
+func DisplayDensity(args ...any) (js.Value, error) {
+	return AnyFuncReturnJsValue("displayDensity", []int{0}, args...)
 }
 
-func GetURL(args ...any) error {
-	return AnyFuncReturnErr("getURL", []int{0}, args...)
+func GetURL(args ...any) (js.Value, error) {
+	return AnyFuncReturnJsValue("getURL", []int{0}, args...)
 }
 
-func GetURLPath(args ...any) error {
-	return AnyFuncReturnErr("getURLPath", []int{0}, args...)
+func GetURLPath(args ...any) (js.Value, error) {
+	return AnyFuncReturnJsValue("getURLPath", []int{0}, args...)
 }
 
-func GetURLParams(args ...any) error {
-	return AnyFuncReturnErr("getURLParams", []int{0}, args...)
+func GetURLParams(args ...any) (js.Value, error) {
+	return AnyFuncReturnJsValue("getURLParams", []int{0}, args...)
 }
