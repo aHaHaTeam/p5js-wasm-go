@@ -7,7 +7,7 @@ import (
 )
 
 func LoadShader(vertPath, fragPath any, callbacks ...func(...js.Value) any) (js.Value, error) {
-	return utils.FuncWithCallbacksReturnJsValue("loadShader", []int{2, 3, 4}, []any{vertPath, fragPath}, callbacks...)
+	return utils.FuncWithCallbacksReturnJsValue("loadShader", []int{0, 1, 2}, []any{vertPath, fragPath}, callbacks...)
 }
 
 func CreateShader(args ...any) (js.Value, error) {
