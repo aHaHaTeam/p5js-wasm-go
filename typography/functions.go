@@ -7,7 +7,7 @@ import (
 )
 
 func LoadFont(path any, callbacks ...func(...js.Value) any) (js.Value, error) {
-	return utils.FuncWithCallbacksReturnJsValue("loadFont", []int{0, 1, 2}, path, callbacks...)
+	return utils.FuncWithCallbacksReturnJsValue("loadFont", []int{0, 1, 2}, []any{path}, callbacks...)
 }
 
 func Text(args ...any) (js.Value, error) {
