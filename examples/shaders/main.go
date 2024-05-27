@@ -3,12 +3,7 @@ package main
 import (
 	"syscall/js"
 
-	. "github.com/aHaHaTeam/p5js-wasm-go/3d"
-	. "github.com/aHaHaTeam/p5js-wasm-go/color"
-	. "github.com/aHaHaTeam/p5js-wasm-go/environment"
-	. "github.com/aHaHaTeam/p5js-wasm-go/p5js"
-	. "github.com/aHaHaTeam/p5js-wasm-go/rendering"
-	. "github.com/aHaHaTeam/p5js-wasm-go/shape"
+	. "github.com/aHaHaTeam/p5js-wasm-go/all"
 )
 
 func main() {
