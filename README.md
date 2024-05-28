@@ -255,26 +255,6 @@ Here is a list of features that have already been implemented:
 </details>
 
 #
-### Constants
-<details>
-<summary>✅ Completed</summary>
-  
-✅`HALF_PI`
-
-✅`PI`
-
-✅`QUARTER_PI`
-
-✅`TAU`
-
-✅`TWO_PI`
-
-✅`DEGREES`
-
-✅`RADIANS`
-</details>
-
-#
 ### Structure
 <details>
 <summary>✴️ In progress (10/12)</summary>
@@ -389,36 +369,6 @@ Here is a list of features that have already been implemented:
 </details>
 
 #
-### Foundation
-<details>
-<summary>⬜ In progress (0/12)</summary>
-  
-⬜`let`
-
-⬜`if`
-
-⬜`function`
-
-⬜`Boolean`
-
-⬜`String`
-
-⬜`Number`
-
-⬜`Object`
-
-⬜`Array`
-
-⬜`class`
-
-⬜`for`
-
-⬜`while`
-
-⬜`console`
-</details>
-
-#
 ### Transform
 <details>
 <summary>⬜ In progress (0/10)</summary>
@@ -442,105 +392,6 @@ Here is a list of features that have already been implemented:
 ⬜`shearY()`
 
 ⬜`translate()`
-</details>
-
-#
-### Data
-#### LocalStorage
-<details>
-<summary>⬜ In progress (0/4)</summary>
-
-⬜`storeItem()`
-
-⬜`getItem()`
-
-⬜`clearStorage()`
-
-⬜`removeItem()`
-</details>
-
-#### Dictionary
-<details>
-<summary>⬜ In progress (0/4)</summary>
-
-⬜`createStringDict()`
-
-⬜`createNumberDict()`
-
-⬜`p5.TypedDict`
-
-⬜`p5.NumberDict`
-</details>
-
-#### Array Functions
-<details>
-<summary>⬜ In progress (0/9)</summary>
-
-⬜`append()`
-
-⬜`arrayCopy()`
-
-⬜`concat()`
-
-⬜`reverse()`
-
-⬜`shorten()`
-
-⬜`shuffle()`
-
-⬜`sort()`
-
-⬜`splice()`
-
-⬜`subset()`
-</details>
-
-#### Conversion
-<details>
-<summary>⬜ In progress (0/9)</summary>
-
-⬜`float()`
-
-⬜`int()`
-
-⬜`str()`
-
-⬜`boolean()`
-
-⬜`byte()`
-
-⬜`char()`
-
-⬜`unchar()`
-
-⬜`hex()`
-
-⬜`unhex()`
-</details>
-
-#### String Functions
-<details>
-<summary>⬜ In progress (0/10)</summary>
-
-⬜`join()`
-
-⬜`match()`
-
-⬜`matchAll()`
-
-⬜`nf()`
-
-⬜`nfc()`
-
-⬜`nfp()`
-
-⬜`nfs()`
-
-⬜`split()`
-
-⬜`splitTokens()`
-
-⬜`trim()`
 </details>
 
 #
@@ -792,56 +643,6 @@ Here is a list of features that have already been implemented:
 
 #
 ### Math
-#### Calculation
-<details>
-<summary>⬜ In progress (0/18)</summary>
-
-⬜`abs()`
-
-⬜`ceil()`
-
-⬜`constrain()`
-
-⬜`dist()`
-
-⬜`exp()`
-
-⬜`floor()`
-
-⬜`lerp()`
-
-⬜`log()`
-
-⬜`mag()`
-
-⬜`map()`
-
-⬜`max()`
-
-⬜`min()`
-
-⬜`norm()`
-
-⬜`pow()`
-
-⬜`round()`
-
-⬜`sq()`
-
-⬜`sqrt()`
-
-⬜`fract()`
-</details>
-
-#### Vector
-<details>
-<summary>⬜ In progress (0/2)</summary>
-
-⬜`createVector()`
-
-⬜`p5.Vector`
-</details>
-
 #### Noise
 <details>
 <summary>⬜ In progress (0/3)</summary>
@@ -851,42 +652,6 @@ Here is a list of features that have already been implemented:
 ⬜`noiseDetail()`
 
 ⬜`noiseSeed()`
-</details>
-
-#### Random
-<details>
-<summary>⬜ In progress (0/18)</summary>
-
-⬜`randomSeed()`
-
-⬜`random()`
-
-⬜`randomGaussian()`
-</details>
-
-#### Trigonometry
-<details>
-<summary>⬜ In progress (0/18)</summary>
-
-⬜`acos()`
-
-⬜`asin()`
-
-⬜`atan()`
-
-⬜`atan2()`
-
-⬜`cos()`
-
-⬜`sin()`
-
-⬜`tan()`
-
-⬜`degrees()`
-
-⬜`radians()`
-
-⬜`angleMode()`
 </details>
 
 #
@@ -1019,11 +784,15 @@ Here is a list of features that have already been implemented:
 ⬜`setCamera()`
 </details>
 
+## Packages that are not planned to be implemented:
 
+We considered that these packages are useless because they provide features that the standard Go library does.
 
-
-
-
-
-
-
+- ### Constants
+- ### Foundation
+- ### Data
+- ### Math:
+    - #### Calculation
+    - #### Vector
+    - #### Random
+    - #### Trigonometry

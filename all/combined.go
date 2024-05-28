@@ -19,6 +19,57 @@ import (
 	"github.com/aHaHaTeam/p5js-wasm-go/utils"
 )
 
+var Arc = shape.Arc
+var Ellipse = shape.Ellipse
+var Circle = shape.Circle
+var Line = shape.Line
+var Point = shape.Point
+var Quad = shape.Quad
+var Rect = shape.Rect
+var Square = shape.Square
+var Triangle = shape.Triangle
+var NoSmooth = shape.NoSmooth
+var EllipseMode = shape.EllipseMode
+var RectMode = shape.RectMode
+var Smooth = shape.Smooth
+var StrokeCap = shape.StrokeCap
+var StrokeJoin = shape.StrokeJoin
+var StrokeWeight = shape.StrokeWeight
+
+var TextAlign = typography.TextAlign
+var TextLeading = typography.TextLeading
+var TextSize = typography.TextSize
+var TextStyle = typography.TextStyle
+var TextWidth = typography.TextWidth
+var TextAscent = typography.TextAscent
+var TextDescent = typography.TextDescent
+var TextWrap = typography.TextWrap
+var LoadFont = typography.LoadFont
+var Text = typography.Text
+var TextFont = typography.TextFont
+
+var AnyFuncReturnErr = utils.AnyFuncReturnErr
+var AnyFuncReturnJsValue = utils.AnyFuncReturnJsValue
+var FuncWithCallbacksReturnJsValue = utils.FuncWithCallbacksReturnJsValue
+var GetGlobalValue = utils.GetGlobalValue
+var BindJsFunc = utils.BindJsFunc
+var AnyFuncReturnInt = utils.AnyFuncReturnInt
+
+var LoadShader = _3d.LoadShader
+var CreateShader = _3d.CreateShader
+var CreateFilterShader = _3d.CreateFilterShader
+var Shader = _3d.Shader
+var ResetShader = _3d.ResetShader
+var Texture = _3d.Texture
+var TextureMode = _3d.TextureMode
+var TextureWrap = _3d.TextureWrap
+var NormalMaterial = _3d.NormalMaterial
+var AmbientMaterial = _3d.AmbientMaterial
+var EmissiveMaterial = _3d.EmissiveMaterial
+var SpecularMaterial = _3d.SpecularMaterial
+var Shininess = _3d.Shininess
+var Metalness = _3d.Metalness
+
 var Alpha = color.Alpha
 var Blue = color.Blue
 var Brightness = color.Brightness
@@ -66,37 +117,6 @@ var GetURL = environment.GetURL
 var GetURLPath = environment.GetURLPath
 var GetURLParams = environment.GetURLParams
 
-var CreateCanvas = rendering.CreateCanvas
-var ResizeCanvas = rendering.ResizeCanvas
-var NoCanvas = rendering.NoCanvas
-var CreateGraphics = rendering.CreateGraphics
-var CreateFramebuffer = rendering.CreateFramebuffer
-var ClearDepth = rendering.ClearDepth
-var BlendMode = rendering.BlendMode
-var SetAttributes = rendering.SetAttributes
-
-var AnyFuncReturnErr = utils.AnyFuncReturnErr
-var AnyFuncReturnJsValue = utils.AnyFuncReturnJsValue
-var FuncWithCallbacksReturnJsValue = utils.FuncWithCallbacksReturnJsValue
-var GetGlobalValue = utils.GetGlobalValue
-var BindJsFunc = utils.BindJsFunc
-var AnyFuncReturnInt = utils.AnyFuncReturnInt
-
-var LoadShader = _3d.LoadShader
-var CreateShader = _3d.CreateShader
-var CreateFilterShader = _3d.CreateFilterShader
-var Shader = _3d.Shader
-var ResetShader = _3d.ResetShader
-var Texture = _3d.Texture
-var TextureMode = _3d.TextureMode
-var TextureWrap = _3d.TextureWrap
-var NormalMaterial = _3d.NormalMaterial
-var AmbientMaterial = _3d.AmbientMaterial
-var EmissiveMaterial = _3d.EmissiveMaterial
-var SpecularMaterial = _3d.SpecularMaterial
-var Shininess = _3d.Shininess
-var Metalness = _3d.Metalness
-
 var KeyIsPressed = events.KeyIsPressed
 var Key = events.Key
 var KeyCode = events.KeyCode
@@ -126,22 +146,14 @@ var MouseWheel = events.MouseWheel
 var RequestPointerLock = events.RequestPointerLock
 var ExitPointerLock = events.ExitPointerLock
 
-var Arc = shape.Arc
-var Ellipse = shape.Ellipse
-var Circle = shape.Circle
-var Line = shape.Line
-var Point = shape.Point
-var Quad = shape.Quad
-var Rect = shape.Rect
-var Square = shape.Square
-var Triangle = shape.Triangle
-var NoSmooth = shape.NoSmooth
-var EllipseMode = shape.EllipseMode
-var RectMode = shape.RectMode
-var Smooth = shape.Smooth
-var StrokeCap = shape.StrokeCap
-var StrokeJoin = shape.StrokeJoin
-var StrokeWeight = shape.StrokeWeight
+var CreateCanvas = rendering.CreateCanvas
+var ResizeCanvas = rendering.ResizeCanvas
+var NoCanvas = rendering.NoCanvas
+var CreateGraphics = rendering.CreateGraphics
+var CreateFramebuffer = rendering.CreateFramebuffer
+var ClearDepth = rendering.ClearDepth
+var BlendMode = rendering.BlendMode
+var SetAttributes = rendering.SetAttributes
 
 var Preload = structure.Preload
 var Setup = structure.Setup
@@ -153,15 +165,3 @@ var IsLooping = structure.IsLooping
 var Push = structure.Push
 var Pop = structure.Pop
 var Redraw = structure.Redraw
-
-var TextAlign = typography.TextAlign
-var TextLeading = typography.TextLeading
-var TextSize = typography.TextSize
-var TextStyle = typography.TextStyle
-var TextWidth = typography.TextWidth
-var TextAscent = typography.TextAscent
-var TextDescent = typography.TextDescent
-var TextWrap = typography.TextWrap
-var LoadFont = typography.LoadFont
-var Text = typography.Text
-var TextFont = typography.TextFont
