@@ -26,7 +26,7 @@ func main() {
 		}
 
 		// Check if the file is .go
-		if !info.IsDir() && strings.HasSuffix(info.Name(), ".go") && info.Name() != "combined.go" && info.Name() != "combine.go" && !strings.Contains(path, "examples") {
+		if !info.IsDir() && strings.HasSuffix(info.Name(), ".go") && info.Name() != "combined.go" && info.Name() != "combine.go" && !strings.Contains(path, "examples") && !strings.Contains(path, "utils") {
 			// Parse file
 			fs := token.NewFileSet()
 			node, err := parser.ParseFile(fs, path, nil, parser.ParseComments)
