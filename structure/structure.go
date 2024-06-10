@@ -1,4 +1,4 @@
-package p5js
+package structure
 
 import (
 	"syscall/js"
